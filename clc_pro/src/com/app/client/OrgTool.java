@@ -7,7 +7,7 @@ import com.add.service.impl.ConceptLearningCentreServiceImpl;
 public class OrgTool {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		ConceptLearningCentreServiceImpl c=new ConceptLearningCentreServiceImpl();
 		Scanner sc=new Scanner(System.in);
 		String s=" ";

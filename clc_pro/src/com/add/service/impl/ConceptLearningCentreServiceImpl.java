@@ -18,7 +18,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void addCourse() {
-		// TODO Auto-generated method stub
+
 		System.out.println("Enter course name");
 		course = new Course();
 		course.setCname(sc.next());
@@ -29,7 +29,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void addBatch() {
-		// TODO Auto-generated method stub
+
 		if(course!=null) {
 			System.out.println("Enter Batch name");
 			batch = new Batch();
@@ -46,7 +46,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void addFaculty() {
-		// TODO Auto-generated method stub
+
 		if(batch!=null) {
 			System.out.println("Enter Faculty name");
 			faculty = new Faculty();
@@ -63,7 +63,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void addStudent() {
-		// TODO Auto-generated method stub
+
 		if(faculty!=null) {
 			System.out.println("Enter Student name");
 			student = new Student();
@@ -80,14 +80,14 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void displayCourse() {
-		// TODO Auto-generated method stub
+
 		System.out.println("Course name    Course id");
   System.out.println(course.getCname()+"\t\t"+course.getId());
 	}
 
 	@Override
 	public void displayBatch() {
-		// TODO Auto-generated method stub
+
 		if(course != null && batch != null) {
 			System.out.println("Batch name    Batch id      Course name   Course id");
 			System.out.println(batch.getBname()+"\t\t"+batch.getId()+"\t\t"+batch.getCourse().getCname()+"\t\t"+batch.getCourse().getId());
@@ -97,7 +97,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void displayFaculty() {
-		// TODO Auto-generated method stub
+
 		if(batch!=null && faculty!=null) {
 			System.out.println("Faculty name    Faculty id      Batch name   batch id");
 			System.out.println(faculty.getFname()+"\t\t"+faculty.getId()+"\t\t"+faculty.getBatch().getBname()+"\t\t"+faculty.getBatch().getId());
@@ -107,7 +107,7 @@ public class ConceptLearningCentreServiceImpl implements ConceptLearningCentreSe
 
 	@Override
 	public void displayStudent() {
-		// TODO Auto-generated method stub
+
 		if(faculty!=null && student!=null) {
 			System.out.println("Stuent name    Student id      Faculty name   faculty id");
 			System.out.println(student.getSname()+"\t\t"+student.getId()+"\t\t"+student.getFaculty().getFname()+"\t\t"+student.getFaculty().getId());
